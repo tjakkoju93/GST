@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="gst.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="./images/bag.png" alt="">
+            <h1>PackYourFood</h1>
+            <img src="./images/navigation-bar.png" alt="" id="img2">
+        </div>
+        <div class="burgerMenu">
+            <h1>Starters</h1>
+            <h1>MainCourse</h1>
+            <h1>Bewarages</h1>
+            <h1>Soups</h1>
+            <h1>Mocktails</h1>
+
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="section">
+            <form action="" class="Customer">
+                <h2>Menu</h2>
+                <div class="item">
+                    <label for="">Briyani : </label>
+                    <!-- <input type="number" value="0" placeholder="Quantity" id="qty1"> -->
+                    <input type="number" value="0"  placeholder="price" id="biryani">
+                </div>
+                <div class="item">
+                    <label for="">Soup : </label>
+                    <!-- <input type="number" value="0" placeholder="Quantity" id="qty2"> -->
+                    <input type="number" value="0" placeholder="price" id="soup">
+                </div>
+                <div class="item">
+                    <label for="">Pulao : </label>
+                    <!-- <input type="number" value="0"placeholder="Quantity" id="qty3"> -->
+                    <input type="number" value="0"  placeholder="price" id="pulao">
+                </div>
+                <div class="item">
+                    <label for="">Pasta : </label>
+                    <!-- <input type="number" value="0" placeholder="Quantity" id="qty4"> -->
+                    <input type="number" value="0"  placeholder="price" id="pasta">
+                </div>
+                <div class="item">
+                    <label for="">Mojito : </label>
+                    <!-- <input type="number" value="0" placeholder="Quantity" id="qty5"> -->
+                    <input type="number" value="0"  placeholder="price" id="drink">
+                </div>
+                <div class="item">
+                    <label for="">Tip : </label>
+                    <input type="number" value="0"  placeholder="price" id="tip">
+                </div>
+                <div class="item">
+                    <label for="">GST(18%)</label>
+                    <!-- <input type="number" placeholder="price" id="gst"> -->
+                </div>
+
+            </form>
+            <form action="" class="Customer">
+                <h2>Customer Details</h2>
+                <div class="item">
+                    <label for="">Name</label>
+                    <input type="text" placeholder="Enter Your Name" id="name">
+                </div>
+                <div class="item">
+                    <label for="">Address</label>
+                    <input type="text" placeholder="Enter Your Address" id="address">
+                </div>
+                <div class="item">
+                    <label for="">Email</label>
+                    <input type="email" placeholder="Enter Your Email Address" id="email">
+                </div>
+                <div class="item">
+                    <label for="">Phone Number</label>
+                    <input type="tel" placeholder="Enter Your phone number" id="contact">
+                </div>
+            </form>
+
+        </div>
+        <button onclick="calculator()">Payment</button>
+    </div>
+    <div class="invoiceDetails">
+        <h1>Customer Invoice</h1>
+        <div class="customerDetails">
+            <h2 id="user"></h2>
+            <h2 id="add"></h2>
+            <h2 id="mail"></h2>
+            <h2 id="phone"></h2>
+        </div>
+        <hr>
+        <div class="billHeader">
+            <h3>Item</h3>
+            <h3>Quantity</h3>
+            <h3>Price</h3>
+        </div>
+        <hr>
+        <div class="finalDisplay">
+            <p id = 'item1'></p>
+            <p id = 'item2'></p>
+            <p id = 'item3'></p>
+            <p id = 'item4'></p>
+            <p id = 'item5'></p>
+            <p id = 'item6'></p>
+        </div>
+
+        <hr>
+        <div class="finalBill">
+            <h3 id="bill"></h3>
+            <h3 id="gst"></h3>
+            <h3 id="tips"></h3>
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
